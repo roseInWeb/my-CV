@@ -113,7 +113,7 @@ code {
     row-gap: 30px;
 }
 
-.ed {
+.edu {
     background-color: rgb(0, 95, 139);
     height: 100px;
     width: 95%;
@@ -127,13 +127,46 @@ code {
     margin-left: auto;
 }
 
-.ed:hover {
-    background-color: rgb(127, 225, 255);
-    color: midnightblue;
+.ed-block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-.ed:last-child {
-    margin-bottom: 0;
+.ed {
+    background-color: rgba(0, 95, 139, 0.521);
+    border: 3px solid rgb(0, 95, 139);
+    min-height: 300px;
+    width: 32%;
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    user-select: none;
+}
+
+.ed-name {
+    text-align: center;
+    font-size: 25px;
+}
+
+.ed-date,
+.ed-link-block,
+.ed-repo-block,
+.ed-desc {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.ed-link:hover {
+    background-color: rgb(127, 225, 255);
+    color: midnightblue;
+    padding: 2px 3px;
+    border-radius: 3px;
+    
 }
 
 .edi {
