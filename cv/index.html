@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Curriculum vitae</title>
 </head>
 <body>
@@ -32,8 +32,10 @@
             </section>
             <section id="About_me">
                 <h2>About me</h2>
-                <img src="avatar.jpg" alt="ava" class="avatar">
-                <div class="f"><b><i>Good day!</i></b><br><br> My name is Katherina Semenova and I am a Junior Front-end Developer. I've been in development for over 2.5 year. Every day I develop and learn something new and useful for me and my dream job. If I don't understand or don't know something, believe me - I will find out and figure out this problem!!!</div>
+                <div class="about-me-block">
+                    <img src="avatar.jpg" alt="ava" class="avatar">
+                <div class="about-text"><b><i>Good day!</i></b><br> My name is Katherina Semenova and I am a Junior Front-end Developer. I've been in development for over 2.5 years. Every day I develop and learn something new and useful for me and my dream job. If I don't understand or don't know something, believe me - I will find out and figure out this problem!!!</div>
+                </div>
             </section>
             <section id="Skills">
                 <h2>Skills</h2>
@@ -66,7 +68,7 @@
             </section>
             <section id="Code_example">
                 <h2>Code example</h2>                
-                <pre><code>
+                <!-- <pre><code>
     function sortByTitleZA() {
         (cards as Element).innerHTML = '';
         sortBtn.forEach(el => {
@@ -89,7 +91,8 @@
         });
         afterSort();
     }
-                </code></pre>
+                </code></pre> -->
+                <div class="code-ex">You can see this on my github by link: <a href="https://github.com/roseInWeb/" class="code-link" target="_blank">https://github.com/roseInWeb/</a></div>
             </section>
             <section id="Work_Expearence">
                 <h2>Work Experience</h2>
@@ -116,6 +119,14 @@
                         <div class="ed-desc">>>> Shelter - is a project consisting of two adaptive and interactive pages</div>
                     </div>
                     <div class="ed">
+                        <p class="ed-name">Momentum</p>
+                        <p class="ed-date">Date of last update: 26.02.2023</p>
+                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/momentum/src/" class="ed-link" target="_blank">roseinweb.github.io/&#8203;momentum/</a></p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/momentum/" class="ed-link" target="_blank">github.com/roseInWeb/&#8203;momentum/</a></p>
+                        <div class="ed-desc">>>> Momentum is an analogue of the Chrome online store application. The application shows the time and username. The background image and greeting change depending on the time of day.
+                            The application has a clock, image slider, weather widgets, audio player, quote of the day. Local storage is used to store the username and locality.</div>
+                    </div>
+                    <div class="ed">
                         <p class="ed-name">Сoncrete</p>
                         <p class="ed-date">Date of last update: 28.10.2022</p>
                         <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/concrete/src/" class="ed-link" target="_blank">roseinweb.github.io/concrete</a></p>
@@ -125,17 +136,17 @@
                     <div class="ed">
                         <p class="ed-name">Calculator</p>
                         <p class="ed-date">Date of last update: 23.10.2022</p>
-                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/myCalculator/dist" class="ed-link" target="_blank">roseinweb.github.io/myCalculator</a></p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/myCalculator" class="ed-link" target="_blank">github.com/roseInWeb/myCalculator</a></p>
+                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/myCalculator/dist" class="ed-link" target="_blank">roseinweb.github.io/&#8203;myCalculator</a></p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/myCalculator" class="ed-link" target="_blank">github.com/roseInWeb/&#8203;myCalculator</a></p>
                         <div class="ed-desc">>>> Calculator - regular calculator</div>
                     </div>
-                    <div class="ed">
+                    <!-- <div class="ed">
                         <p class="ed-name">Tic tac toe</p>
                         <p class="ed-date">Date of last update: 01.10.2022</p>
                         <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/tic-tac-toe/js30-3/" class="ed-link">roseinweb.github.io/tic-tac-toe/js30-3/</a></p>
                         <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/tic-tac-toe" class="ed-link">github.com/roseInWeb/tic-tac-toe</a></p>
                         <div class="ed-desc">>>> Conducted on the field 3 * 3 cells. When clicking on the cells of the field, the first move always puts a cross, the next zero, and so on in turn. The goal of the game is to line up a row of three identical figures.</div>
-                    </div>
+                    </div> -->
                     <div class="ed">
                         <p class="ed-name">Eco-sounds</p>
                         <p class="ed-date">Date of last update: 01.10.2022</p>
@@ -144,39 +155,18 @@
                         <div class="ed-desc">>>> This is a copy of a site that no longer exists (there is a copy in the web archive), on each page of which beautiful landscapes were displayed and its own unique melody was played, into which birdsong was woven</div>
                     </div>
                     <div class="ed">
-                        <p class="ed-name">Css Mem Slider</p>
-                        <p class="ed-date">Date of last update: 01.10.2022</p>
-                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/cssMemSlider/cssMemSlider/" class="ed-link" target="_blank">roseinweb.github.io/cssMemSlider/</a></p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/cssMemSlider" class="ed-link" target="_blank">github.com/roseInWeb/cssMemSlider</a></p>
-                        <div class="ed-desc">>>> The complexity of this slider lies in the fact that it was written without using JS at all</div>
-                    </div>
-                    <div class="ed">
                         <p class="ed-name">Virtual Keyboard</p>
                         <p class="ed-date">Date of last update: 23.10.2022</p>
-                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/VirtualKeyboard/dist" class="ed-link" target="_blank">roseinweb.github.io/VirtualKeyboard/</a></p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/VirtualKeyboard" class="ed-link" target="_blank">github.com/roseInWeb/VirtualKeyboard</a></p>
+                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/VirtualKeyboard/dist" class="ed-link" target="_blank">roseinweb.github.io/&#8203;VirtualKeyboard/</a></p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/VirtualKeyboard" class="ed-link" target="_blank">github.com/roseInWeb/&#8203;VirtualKeyboard</a></p>
                         <div class="ed-desc">>>> This is a virtual keyboard with an English layout. In the near future I plan to migrate this application to TS</div>
                     </div>
                     <div class="ed">
-                        <p class="ed-name">Random quotations</p>
-                        <p class="ed-date">Date of last update: 26.03.2024</p>
-                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/r-q" class="ed-link" target="_blank">roseinweb.github.io/random-quotations/</a></p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/r-q" class="ed-link" target="_blank">github.com/roseInWeb/random-quotations</a></p>
-                        <div class="ed-desc">>>> The project is designed to get the first experience with the API - asynchronously receiving data and displaying it on the page</div>
-                    </div>
-                    <div class="ed">
-                        <p class="ed-name">Core JS</p>
-                        <p class="ed-date">Date of last update: 03.06.2023</p>
+                        <p class="ed-name">Core-js-numbers</p>
+                        <p class="ed-date">Date of last update: 17.12.2023</p>
                         <p class="ed-link-block">Link: ―</p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/core-js-101" class="ed-link" target="_blank">github.com/roseInWeb/core-js-101</a></p>
-                        <div class="ed-desc">>>> The task is to implement functions on different Core JS topics. There are eight modules with different tasks</div>
-                    </div>
-                    <div class="ed">
-                        <p class="ed-name">HTML Builder</p>
-                        <p class="ed-date">Date of last update: 05.05.2023</p>
-                        <p class="ed-link-block">Link: ―</p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/HTML-builder" class="ed-link" target="_blank">github.com/roseInWeb/HTML-builder</a></p>
-                        <div class="ed-desc">>>> In this series of tasks, the main goal is to understand the basics of working with the Node.js platform. It is proposed to perform a number of small tasks with a gradual increase in complexity</div>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/core-js-numbers" class="ed-link" target="_blank">github.com/roseInWeb/core-js-numbers</a></p>
+                        <div class="ed-desc">>>> The task is to implement functions on different Core JS topics. This module requires solving problems involving number operations.</div>
                     </div>
                     <div class="ed">
                         <p class="ed-name">Human Readable Number</p>
@@ -193,18 +183,39 @@
                         <div class="ed-desc">>>> Task is to implement the so-called 'towel sort' algorithm</div>
                     </div>
                     <div class="ed">
-                        <p class="ed-name">Core-js-numbers</p>
-                        <p class="ed-date">Date of last update: 17.12.2023</p>
-                        <p class="ed-link-block">Link: ―</p>
-                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/core-js-numbers" class="ed-link" target="_blank">github.com/roseInWeb/core-js-numbers</a></p>
-                        <div class="ed-desc">>>> The task is to implement functions on different Core JS topics. This module requires solving problems involving number operations.</div>
-                    </div>
-                    <div class="ed">
                         <p class="ed-name">Core-js-strings</p>
                         <p class="ed-date">Date of last update: 16.12.2023</p>
                         <p class="ed-link-block">Link: ―</p>
                         <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/core-js-strings" class="ed-link" target="_blank">github.com/roseInWeb/core-js-strings</a></p>
                         <div class="ed-desc">>>> The goal of the assignment is to learn how to work with strings in JS.</div>
+                    </div>
+                    <div class="ed">
+                        <p class="ed-name">Css Mem Slider</p>
+                        <p class="ed-date">Date of last update: 01.10.2022</p>
+                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/cssMemSlider/cssMemSlider/" class="ed-link" target="_blank">roseinweb.github.io/&#8203;cssMemSlider/</a></p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/cssMemSlider" class="ed-link" target="_blank">github.com/roseInWeb/&#8203;cssMemSlider</a></p>
+                        <div class="ed-desc">>>> The complexity of this slider lies in the fact that it was written without using JS at all</div>
+                    </div>
+                    <div class="ed">
+                        <p class="ed-name">Random quotations</p>
+                        <p class="ed-date">Date of last update: 26.03.2024</p>
+                        <p class="ed-link-block">Link: <a href="https://roseinweb.github.io/r-q" class="ed-link" target="_blank">roseinweb.github.io/r-q/</a></p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/r-q" class="ed-link" target="_blank">github.com/roseInWeb/&#8203;r-q/</a></p>
+                        <div class="ed-desc">>>> The project is designed to get the first experience with the API - asynchronously receiving data and displaying it on the page</div>
+                    </div>
+                    <div class="ed">
+                        <p class="ed-name">Core JS</p>
+                        <p class="ed-date">Date of last update: 03.06.2023</p>
+                        <p class="ed-link-block">Link: ―</p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/core-js-101" class="ed-link" target="_blank">github.com/roseInWeb/core-js-101</a></p>
+                        <div class="ed-desc">>>> The task is to implement functions on different Core JS topics. There are eight modules with different tasks</div>
+                    </div>
+                    <div class="ed">
+                        <p class="ed-name">HTML Builder</p>
+                        <p class="ed-date">Date of last update: 05.05.2023</p>
+                        <p class="ed-link-block">Link: ―</p>
+                        <p class="ed-repo-block">Repo: <a href="https://github.com/roseInWeb/HTML-builder" class="ed-link" target="_blank">github.com/roseInWeb/HTML-builder</a></p>
+                        <div class="ed-desc">>>> In this series of tasks, the main goal is to understand the basics of working with the Node.js platform. It is proposed to perform a number of small tasks with a gradual increase in complexity</div>
                     </div>
                 </div>
             </section>
@@ -224,8 +235,6 @@
         <span class="copyright">&#169;</span>
         <span class="data-year">2022</span>
         <a href="https://github.com/roseInWeb" class="github">github</a>
-        <a href="https://rs.school/js-stage0/" class="footer-logo"></a>
     </footer>
-    <script src="./index.js"></script>
 </body>
 </html>
