@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Curriculum vitae</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav>
+            <ul>
+                <li class="lin"><a href="#Contacts">Contacts</a></li>
+                <li class="lin"><a href="#About_me">About me</a></li>
+                <li class="lin"><a href="#Skills">Skills</a></li>
+                <li class="lin"><a href="#Code_example">Code</a></li>
+                <li class="lin"><a href="#Work_Expearens">Work Experience</a></li>
+                <li class="lin"><a href="#Education">Education</a></li>
+                <li class="lin_"><a href="#My_level_of_English">English</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <h1>Curriculum vitae</h1>
+            <section id="Contacts">
+                <h2>Contacts</h2>
+                <p class="cont em">E-mail: i.a.semyonova@mail.ru</p>
+                <p class="cont tel">Telephone: 89271480883</p>
+            </section>
+            <section id="About_me">
+                <h2>About me</h2>
+                <img src="avatar.jpg" alt="" width="300px">
+                <div class="f"><b><i>Good day!</i></b><br><br> My name is Irina Semenova and I am a Junior Front-end Developer. Every day I develop and learn something new and useful for me and my dream job. If I don't understand or don't know something, believe me - I will find out and figure out this problem!!!</div>
+            </section>
+            <section id="Skills">
+                <h2>Skills</h2>
+                <table>
+                    <tr>
+                        <td>&#9745; HTML</td>
+                        <td>&#9745; CSS</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; SASS</td>
+                        <td>&#9745; Git</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; Perfect Pixel</td>
+                        <td>&#9745; Figma</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; Ibis Paint X</td>
+                        <td>&#9745; Work in 1C</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; JavaScript</td>
+                        <td>&#9745; TypeScript</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; React</td>
+                        <td>&#9745; Rest API</td>
+                    </tr>
+                    <tr>
+                        <td>&#9745; ESLint</td>
+                        <td>&#9745; Webpack</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="Code_example">
+                <h2>Code example</h2>                
+                <pre><code>
+    function sortByTitleZA() {
+        (cards as Element).innerHTML = '';
+        sortBtn.forEach(el => {
+            (el as HTMLElement).style.backgroundColor = '#fff';
+            (el as HTMLElement).style.color = '#000';
+        });
+        (sortBtn[1] as HTMLElement).style.backgroundColor = '#000';
+        (sortBtn[1] as HTMLElement).style.color = '#fff';
+        newCatalog.sort(function(a, b){
+            const nameA = a.title.toLowerCase(),
+            nameB = b.title.toLowerCase();
+            if (nameA < nameB) {
+                return 1;
+            }
+            if (nameA > nameB) {
+                return -1;
+            } else {
+                return 0 ;
+            }
+        });
+        afterSort();
+    }
+                </code></pre>
+            </section>
+            <section id="Work_Expearens">
+                <h2>Work Experience</h2>
+		        <a href="https://roseinweb.github.io/shelter/shelter/pages/main/" class="ed" target="_blank">Shelter</a><br>
+		        <a href="https://roseinweb.github.io/tic-tac-toe/js30-3/" class="ed" target="_blank">Tic-tac-toe</a><br>
+                <a href="https://roseinweb.github.io/eco-sounds/js30-1/" class="ed" target="_blank">Eco-sounds</a><br>
+		        <a href="https://roseinweb.github.io/cssMemSlider/cssMemSlider/" class="ed" target="_blank">Css Mem Slider</a><br>
+                <a href="https://roseinweb.github.io/random-quotations/js30-2/index_ru.html" class="ed" target="_blank">Random-quotations</a>
+            </section>
+            <section id="Education">
+                <h2>Education</h2>
+                <div class="ed">GOU SPO "Saratov technical school of light industry"
+                    Faculty of Economics, Accountant / Economics, accounting and control</div>
+                    <div class="ed">Saratov State University N.G. Chernyshevsky, Saratov
+                        Faculty of Economics, Economic Theory</div>
+                <div class="ed">I finished course JS/FRONT-END</div>
+            </section>
+            <section id="My_level_of_English">
+                <h2>My level of English</h2>
+                <div class="level">I think it is nearly A2 - B1</div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer-container">        
+        <span class="copyright">&#169;</span>
+        <span class="data-year">2022</span>
+        <a href="https://github.com/roseInWeb" class="github">github</a>
+        <a href="https://rs.school/js-stage0/" class="footer-logo"></a>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
